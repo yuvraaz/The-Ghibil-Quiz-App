@@ -2,7 +2,6 @@ package fr.epita.theghibilquizapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-
 class AnswerActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

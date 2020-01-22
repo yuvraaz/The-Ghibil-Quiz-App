@@ -34,6 +34,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_result" />
 
+
     <TextView
         android:id="@+id/lbl_title"
         android:layout_width="wrap_content"

@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class MultiChoiceAdapter(items: ArrayList<Choices>) :
+class MultiChoiceAdapter(items: ArrayList<Film>) :
     RecyclerView.Adapter<MultiChoiceAdapter.CategoryViewHolder>() {
     var catItems = items
 
@@ -21,7 +21,7 @@ class MultiChoiceAdapter(items: ArrayList<Choices>) :
     }
 
     override fun onBindViewHolder(holder: CategoryViewHolder, position: Int) {
-        var choice: Choices = catItems[position]
+        var choice: Film = catItems[position]
         holder.title.text = choice.title
 
         //event
@@ -44,6 +44,6 @@ class MultiChoiceAdapter(items: ArrayList<Choices>) :
     var onListItemClickListener: OnListItemClickListener? = null
 
     interface OnListItemClickListener {
-        fun onItemClicked(choice: Choices)
+        fun onItemClicked(choice: Film)
     }
 }
