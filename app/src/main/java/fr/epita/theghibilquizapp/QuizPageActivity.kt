@@ -3,15 +3,21 @@ package fr.epita.theghibilquizapp
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.RecyclerView
 import okhttp3.*
 import okio.IOException
 
 
 class QuizPageActivity : AppCompatActivity() {
 
+    lateinit var recyclerView: RecyclerView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        recyclerView = findViewById(R.id.rv_multiple_choice)
+
+
         requestFilms()
     }
 
