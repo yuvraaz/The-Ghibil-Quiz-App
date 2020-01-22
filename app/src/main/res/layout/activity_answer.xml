@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     tools:context=".AnswerActivity" >
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:text="TextView"
+        android:textStyle="bold|italic"
+        android:textSize="35dp"
+        android:textColor="#4CAF50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_answer_summery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="TextView"
+        android:textSize="19dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_result" />
+
+    <TextView
+        android:id="@+id/lbl_title"
+        android:layout_width="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:textSize="19dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_answer_summery" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="19dp"
+
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/lbl_title"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_title" />
+
+    <TextView
+        android:id="@+id/lbl_director"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/colorBlack"
+        android:textSize="19dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/tv_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+    <TextView
+        android:id="@+id/tv_director"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="19dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/lbl_director"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_director" />
+
+    <TextView
+        android:id="@+id/lbl_synopsis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:textColor="@color/colorBlack"
+        android:textSize="19dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/tv_director"
+        app:layout_constraintTop_toBottomOf="@+id/tv_director" />
+
+    <TextView
+        android:id="@+id/tv_synopsis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textSize="19dp"
+
+        app:layout_constraintStart_toStartOf="@+id/lbl_synopsis"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_synopsis" />
+
+    <TextView
+        android:id="@+id/lbl_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="TextView"
+        android:textSize="19dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/lbl_title" />
+
+    <TextView
+        android:id="@+id/tv_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="19dp"
+
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/lbl_year"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_year" />
+
+    <TextView
+        android:id="@+id/lbl_characters"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="TextView"
+        android:textColor="@color/colorBlack"
+        android:textSize="19dp"
+        app:layout_constraintStart_toStartOf="@+id/tv_synopsis"
+        app:layout_constraintTop_toBottomOf="@+id/tv_synopsis" />
+
+    <TextView
+        android:id="@+id/tv_characters"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textSize="19dp"
+
+        app:layout_constraintStart_toStartOf="@+id/lbl_characters"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_characters" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="@string/label_info"
+        android:textSize="19dp"
+
+        android:textAllCaps="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_characters" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
