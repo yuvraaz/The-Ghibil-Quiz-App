@@ -27,7 +27,7 @@ class MultiChoiceAdapter(items: List<Film>) :
         holder.image.setImageResource(R.drawable.indicator)
 
         //event
-        holder.title.setOnClickListener {
+        holder.itemView.setOnClickListener {
             onListItemClickListener?.onItemClicked(choice)
         }
     }

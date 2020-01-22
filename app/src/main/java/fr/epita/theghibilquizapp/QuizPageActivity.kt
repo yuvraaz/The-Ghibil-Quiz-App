@@ -21,6 +21,7 @@ class QuizPageActivity : AppCompatActivity(), MultiChoiceAdapter.OnListItemClick
     var choiceAdapter: MultiChoiceAdapter? = null
     lateinit var catItems: List<Film>
 
+    var movieName = "Grave of the Fireflies"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,7 +30,7 @@ class QuizPageActivity : AppCompatActivity(), MultiChoiceAdapter.OnListItemClick
         appLogo = findViewById(R.id.app_logo)
         appLogo.setImageResource(R.drawable.app_icon)
         question = findViewById(R.id.lbl_question)
-        question.text = "Grave of the Fireflies"
+        question.text = "Which one of these characters can be found in the movie" + movieName
 
 
         parepareData()
@@ -62,7 +63,8 @@ class QuizPageActivity : AppCompatActivity(), MultiChoiceAdapter.OnListItemClick
     }
 
     override fun onItemClicked(choice: Film) {
-        var myIntent = Intent(this, AnswerActivity::class.java);
+        var myIntent = Intent(this, AnswerActivity::class.java)
+
         startActivity(myIntent)
     }
 
