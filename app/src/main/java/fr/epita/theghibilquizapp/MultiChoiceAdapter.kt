@@ -3,10 +3,11 @@ package fr.epita.theghibilquizapp
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class MultiChoiceAdapter(items: ArrayList<Film>) :
+class MultiChoiceAdapter(items: List<Film>) :
     RecyclerView.Adapter<MultiChoiceAdapter.CategoryViewHolder>() {
     var catItems = items
 
@@ -23,6 +24,7 @@ class MultiChoiceAdapter(items: ArrayList<Film>) :
     override fun onBindViewHolder(holder: CategoryViewHolder, position: Int) {
         var choice: Film = catItems[position]
         holder.title.text = choice.title
+        holder.image.setImageResource(R.drawable.indicator)
 
         //event
         holder.title.setOnClickListener {
@@ -32,6 +34,8 @@ class MultiChoiceAdapter(items: ArrayList<Film>) :
 
     class CategoryViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         var title: TextView = itemView.findViewById(R.id.lbl_title)
+        var image: ImageView = itemView.findViewById(R.id.iv_thumbnail)
+
 
     }
 
